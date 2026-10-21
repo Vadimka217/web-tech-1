@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Решение алгоритмической задачи</title>
+</head>
+<body>
+
+  <nav>
+    <a href="../index.html"><img src="../images/logo.png" alt="На главную" width="24" height="24"></a> |
+    <a href="../index.html">Главная</a> |
+    <a href="../pages/catalog.html">Каталог</a> |
+    <a href="../pages/specs.html">Характеристики</a> |
+    <a href="../pages/gallery.html">Галерея</a> |
+    <a href="../pages/reviews.html">Отзывы</a> |
+    <a href="../pages/order.html">Заказ</a> |
+    <a href="../pages/contacts.html">Контакты</a> |
+    <a href="https://www.apple.com/iphone/" target="_blank">Apple.com (внешний сайт)</a> |
+    <a href="https://www.apple.com/iphone/" target="_blank"><img src="../images/ext.png" alt="Apple.com" width="24" height="24"></a> |
+    <a href="../pages/dom_read.html">Считываем DOM</a> |
+    <a href="../pages/dom_change.html">Кириллица → латиница</a> |
+    <mark><a href="../pages/task.html">Задача</a></mark> |
+  </nav>
+  <hr>
+
+  <main>
+
+    <h1>Решение алгоритмической задачи</h1>
+    <p>Задача № 1018. </p>
+    <p>Известен год. Определить, будет ли этот год високосным, и к какому веку этот год относится.</p>
+
+    <form action="https://httpbin.org/post" method="post" target="_blank" id="taskForm">
+
+      <p>
+        <label for="year">Год</label>
+        <input type="number" id="year" name="year" value="2024" min="1">
+      </p>
+
+      <p>
+        <label for="leap">Високосный ли год</label>
+        <input type="text" id="leap" name="leap" value="не определено" readonly>
+      </p>
+
+      <p>
+        <label for="century">Век</label>
+        <input type="text" id="century" name="century" value="не определён" readonly>
+      </p>
+
+      <button type="button" id="solve">Решить</button>
+      <button type="submit">Отправить на сервер</button>
+    </form>
+  </main>
+
+  <hr>
+  <footer>
+    <a href="../index.html">На главную</a> · © 2026 iStore - учебный проект
+  </footer>
+
+  <script src="../scripts/task.js"></script>
+</body>
+</html>
